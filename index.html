@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="data:image/png;base64,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" type="image/x-icon" />
+    <title>SWE</title>
+</head>
+<body>
+    <div id="container">
+        <div class="header">
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-229641527-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-229641527-1');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LBH0NDYGDT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LBH0NDYGDT');
+</script>
+            <div class="header-wrap flex between px-4">
+                <div class="logo">
+                    <a target="page" href="./home.html">
+                        <img width="80px" src="./img/swe_logo_0ea0272fe0d14286b3d85b2578e0bc4b.gif" alt="">
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <ul class="main-menu flex hover">
+                        <li class="style px-4" ><a target="page" class="text-decoration color btn-2" href="">HOME</a></li>
+                        <li class="style px-4" ><a target="page" class="text-decoration color btn-2" href="">ALL</a></li>
+                        <li class="style px-4" ><a target="page" class="text-decoration color btn-2" href="./best.html">BEST</a></li>
+                        <li class="style px-4" ><a target="page" class="text-decoration color btn-2" href="./tops.html">TOPS</a></li>
+                        <li class="style px-4" ><a target="page" class="text-decoration color btn-2" href="">OUTERWEAR</a></li>
+                        <li class="style px-4" ><a target="page" class="text-decoration color btn-2" href="">BOTTOMS</a></li>
+                        <li class="style px-4" ><a target="page" class="text-decoration color btn-2" href="">ACCESSORIES</a></li>
+                        <!-- <li class="style px-4" ><a target="page" class="text-decoration color btn-2" href="">SALE</a></li> -->
+                        <li class="style px-4" ><a target="page" class="text-decoration color btn-2" href="./store.html">STORE</a></li>
+                        <li class="style px-4" ><a target="page" class="text-decoration color btn-2" href="./hiring.html">HIRING</a></li>
+                    </ul>
+                </div>
+                <div class="header-actions">
+                    <ul class="flex hover_tow">
+                        <li class="style px-2"><a class="color text-decoration btn-2" href="">MY ACCOUNT</a>
+                            <ul class="nav-menu hover_tow">
+                                <li class="style px-2"><a class="color text-decoration" href="">LOG IN</a>
+                            </ul>
+                           
+                        </li>
+                        <li class="style px-2"><a class="color text-decoration btn-2" href="">SEARCH</a></li>
+                        <li class="style px-2"><a class="color text-decoration btn-2" href="">CART</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <article>
+          <iframe name="page" src="home.html" scrolling="auto" frameborder="0"></iframe>
+      </article>
+
+        <div class="footer flex between px-5">
+          <div class="footer-left">
+            <ul class="flex">
+              <li class="style px-2"><a target="page" class="text-decoration font-weight color" href="./about.html">About SWE</a></li>
+              <li class="style px-2"><a target="page" class="text-decoration font-weight color" href="./return.html">Return Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-center">
+              <span class="font-weight">©2022 SWE, LLC. All Rights Reserved.</span>
+          </div>
+          <div class="footer-right">
+            <ul class="flex">
+              <li class="style px-2"><a target="page" class="text-decoration font-weight color" href="./contact.html">Contact Us</a></li>
+              <li class="style px-2"><a target="page" class="text-decoration font-weight color" href="https://www.facebook.com/SWE-HANOI-865406597150513">Facebook</a></li>
+              <li class="style px-2"><a target="page" class="text-decoration font-weight color" href="">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+       
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
